@@ -14,7 +14,7 @@ app = Flask(__name__)
 def index():
     host_header = request.headers['Host']
     # extract animal from hostname, very pretty
-    reg = re.search('^web\.(.+)-(.+)\.(.+)\.(.+)', host_header)
+    reg = re.search('^web-(.+)-(.+)\.(.+)\.(.+)', host_header)
     if reg:
       animal = reg.group(1)
     else:
