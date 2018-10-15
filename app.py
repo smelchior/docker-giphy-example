@@ -3,7 +3,7 @@ import giphypop, re, socket
 
 g = giphypop.Giphy()
 
-version ='1.0'
+version ='2.0'
 hostname = socket.gethostname()
 
 print "Starting web container %s" % hostname
